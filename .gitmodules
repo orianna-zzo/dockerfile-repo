@@ -1,3 +1,0 @@
-[submodule "hugo-docker"]
-	path = hugo-docker
-	url = https://github.com/orianna-zzo/hugo-docker-dev.git
