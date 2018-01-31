@@ -1,0 +1,33 @@
+# make
+cython 
+sip
+setuptools
+
+# ml
+numpy
+pandas
+sklearn 
+scipy 
+scikit-learn 
+scikit-image 
+statsmodels
+
+# tool
+jupyter 
+
+# graph
+bokeh 
+seaborn 
+matplotlib
+
+
+# util
+sqlalchemy 
+hdf5 
+h5py 
+protobuf 
+xlrd
+xlwt
+xlsxwriter
+yaml
+joblib
