@@ -20,7 +20,5 @@ You can build from the Dockerfile.
 $ docker build -t your-image-name:your-tag .
 ```
 
-## Issue:
 
-The bash prompt cannot show the current directory. If you want to show the directory in the interactive tty, please `source /etc/bashrc` first.
 

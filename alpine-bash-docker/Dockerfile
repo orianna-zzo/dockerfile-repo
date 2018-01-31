@@ -1,9 +1,8 @@
 FROM alpine:latest
 MAINTAINER Ziou Zheng <zhengziou@gmail.com>
 
-
-COPY bashrc /etc/bashrc
-
+# show user & current directory in the bash prompt
+ENV PS1='\[\e[0;32m\][\u@\h \w \$]\[\e[m\]'
 
 RUN apk update && apk add --no-cache bash bash-doc bash-completion \ 
     && sed -i -e 's/\/bin\/ash/\/bin\/bash/' /etc/passwd \ 
