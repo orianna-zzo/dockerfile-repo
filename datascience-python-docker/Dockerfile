@@ -11,8 +11,8 @@ RUN apk update && apk add --no-cache bash bash-doc bash-completion \
 
 
 # install python 3 packages
+RUN apk add --no-cache g++ gfortran freetype-dev libpng  
 COPY requirements.txt /requirements.txt
-RUN apk add --no-cache g++ gfortran
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 CMD ["/bin/bash"]
