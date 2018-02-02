@@ -40,4 +40,5 @@ jupyter
 ipywidgets  # IPython HTML widgets for Jupyter
 vincent  # visualization
 beautifulsoup4  # HTML/XML parser
-dill  # 使pickle保存更多类型数据
+dill  # 使pickle保存更多类型数据dill  # 使pickle保存更多类型数据
+
