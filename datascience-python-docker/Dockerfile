@@ -11,7 +11,11 @@ RUN apk update && apk add --no-cache bash bash-doc bash-completion \
 
 
 # install python 3 packages
-RUN apk add --no-cache g++ gfortran freetype-dev libpng  
+# g++ gfortran -> numpy & pandas
+# freetype-dev libpng -> matplotlib
+# openblas-dev -> scipy
+RUN apk add --no-cache g++ gfortran freetype-dev libpng openblas-dev 
+RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 COPY requirements.txt /requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
