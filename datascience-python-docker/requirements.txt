@@ -1,19 +1,25 @@
-# make
-cython 
-sip
-setuptools
+# util
+sqlalchemy 
+h5py 
+protobuf 
+xlrd
+xlwt
+xlsxwriter
+pyyaml
+joblib
 
-# ml
+
+# math
 numpy
 pandas
-sklearn 
-scipy 
-scikit-learn 
-scikit-image 
-statsmodels
+sympy  # 符号运算  可以计算积分、不定积分
 
-# tool
-jupyter 
+
+# accelerate
+cython 
+numexpr  # 加速numpy
+numba  # 预编译，加速for
+
 
 # graph
 bokeh 
@@ -21,13 +27,17 @@ seaborn
 matplotlib
 
 
-# util
-sqlalchemy 
-hdf5 
-h5py 
-protobuf 
-xlrd
-xlwt
-xlsxwriter
-yaml
-joblib
+# ml
+sklearn 
+scipy 
+scikit-learn 
+scikit-image 
+statsmodels
+
+
+# tool
+jupyter 
+ipywidgets  # IPython HTML widgets for Jupyter
+vincent  # visualization
+beautifulsoup4  # HTML/XML parser
+dill  # 使pickle保存更多类型数据
