@@ -4,9 +4,11 @@
 Alpine docker image using bash instead of ash.
 
 ### Get the image
-You can get the image from Docker Hub or you can build it with Dockerfile
+You can get the image from [Docker Hub](https://hub.docker.com/r/orianna/alpine-bash/) or you can build it with Dockerfile
 
 #### From Docker Hub
+
+You can pull the image from [Docker Hub](https://hub.docker.com/r/orianna/alpine-bash/)
 
 ```shell
 $ docker pull orianna/alpine-bash
@@ -17,7 +19,7 @@ $ docker pull orianna/alpine-bash
 
 #### From Dockerfile
 
-You can build from the Dockerfile.
+You can build it from the Dockerfile.
 Default base image: alpine:latest
 
 ```shell
