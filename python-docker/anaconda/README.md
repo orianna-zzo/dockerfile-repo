@@ -8,14 +8,14 @@ You can get the image from the [Docker Hub](https://hub.docker.com/r/orianna/ana
 
 #### From Docker Hub
 
-You can pull the image from the [Docker Hub](https://hub.docker.com/r/orianna/anaconda/
+You can pull the image from the [Docker Hub](https://hub.docker.com/r/orianna/)anaconda/
 
 ```shell
 $ docker pull orianna/anaconda
 ```
 
 ##### Supported tags
-* 3.6, latest (python 3.6 anaconda3-5.0.1)
+* 3.6, latest (python 3.6, anaconda3-5.0.1)
 
 #### From Dockerfile
 
