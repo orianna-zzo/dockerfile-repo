@@ -6,4 +6,4 @@
 * [front-end-docker](front-end-docker): docker for front end development
     * [sass-docker](front-end-docker/sass-docker): docker for sass compiler
         * [Sassc](front-end-docker/sass-docker/libsass-docker): libsass (lack some functions)
-        * [Dart sass](front-end-docker/sass-docker/dart-sass-docker): base on node.js
+        * [Dart sass](front-end-docker/sass-docker/dart-sass-docker): based on node.js

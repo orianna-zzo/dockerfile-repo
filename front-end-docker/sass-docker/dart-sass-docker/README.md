@@ -1,6 +1,8 @@
 # dart-sass-docker
 Docker image for [Sass/Scss](http://sass-lang.com/) compiler (development environment) using Dart Sass based on node:10.8.0-jessie.
 
+Warning: `--watch` cannot be used, though it is included in dart-sass (see `sass -h`)
+
 ## Get the Image
 There are two ways to get the docker image. One is to pull it from docker hub, the other is to build it by yourself. 
 
