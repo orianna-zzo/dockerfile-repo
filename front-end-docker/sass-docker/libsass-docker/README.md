@@ -86,6 +86,7 @@ $ docker run --name my-libsass -v $(pwd):/sass -v $(pwd)/css:/output --rm -it --
 
 ## Version
 ### v3.5.2:
+- alpine:latest -> 3.8
 - sassc: 3.4.8-6-g43c4  
 - libsass: 3.5.2-75-gedd2  
 - sass2scss: 1.1.1  
