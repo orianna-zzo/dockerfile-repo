@@ -7,10 +7,10 @@ Warning: no `--watch` flag in libsass.
 There are two ways to get the docker image. One is to pull it from docker hub, the other is to build it by yourself. 
 
 ### From Docker Hub
-The compressed size of the image on Docker Hub is only 4MB. 
+[Here](https://hub.docker.com/r/orianna/libsass/) is the image on the Docker Hub. The compressed size is only 4MB. 
 You can simply pull the latest image by:
 ```shell
-$ docker pull orianna/libsass-docker
+$ docker pull orianna/libsass
 ```
 
 Check the image, and this image is only 8.76MB now:
@@ -33,10 +33,10 @@ $ docker build -t your/image-name:your-tag -t your/image-name:latest .
 
 e.g.
 ```shell
-$ docker build -t orianna/libsass-docker-dev:3.5.2 -t orianna/sass-docker-dev:latest .
+$ docker build -t orianna/libsass:3.5.2 -t orianna/libsass:latest .
 ```
 
-Check the image, and this image is only 94.0MB now:
+Check the image, and this image is only 8.76MB now:
 ```shell
 $ docker images
 ```
@@ -60,36 +60,33 @@ $ docker run --name container-name -v your-sass-source-path:/sass -v your-css-ou
 
 `-t` means to open a terminal.
 
-`-v your-sass-source-path:/sass` mounts your local sass source directory to the docker. `-v your-css-output-path:/output` defines where to save the static css compiled by sass.
+`-v your-sass-source-path:/sass` mounts your local sass source directory to the docker. `-v your-css-output-path:/output` defines where to save the static css file compiled by sass.
 
 e.g.
 ```shell
-$ docker run --name my-libsass -v $(pwd):/sass -v $(pwd)/css:/output --rm -it orianna/libsass-docker:latest SOURCE.scss DIST.css
+$ docker run --name my-libsass -v $(pwd):/sass -v $(pwd)/css:/output --rm -it orianna/libsass:latest SOURCE.scss DIST.css
 ```
 
 To simplify it, you can config alias in `~/.profile` as follows:
 ```shell
-alias libsass-docker="docker run -it --rm -v \$(pwd):/sass -v \$(pwd):/output orianna/libsass-docker:latest"
+alias libsass="docker run -it --rm -v \$(pwd):/sass -v \$(pwd):/output orianna/libsass:latest"
 ```
 
-With this alias, you can use the libsass-docker image as if you use `sass` command locally:
+With this alias, you can use the libsass image as if you use `sass` command locally:
 ```shell
-$ libsass-docker SOURCE.scss DIST.css    # sass SOURCE.scss DIST.css
-$ libsass-docker -v                      # sass -v
-$ libsass-docker -h                      # sass -h
+$ libsass SOURCE.scss DIST.css    # sass SOURCE.scss DIST.css
+$ libsass -v                      # sass -v
+$ libsass -h                      # sass -h
 ```
 
 If you want to use shell in the container interactively, you can enter:
 ```shell
-$ docker run --name my-libsass -v $(pwd):/sass -v $(pwd)/css:/output --rm -it --entrypoint sh orianna/libsass-docker:latest
+$ docker run --name my-libsass -v $(pwd):/sass -v $(pwd)/css:/output --rm -it --entrypoint sh orianna/libsass:latest
 ```
 
 ## Version
 ### v3.5.2:
-sassc: 3.4.8-6-g43c4
-libsass: 3.5.2-75-gedd2
-sass2scss: 1.1.1
-sass: 3.5
+sassc: 3.4.8-6-g43c4  libsass: 3.5.2-75-gedd2  sass2scss: 1.1.1  sass: 3.5
 
 
 
