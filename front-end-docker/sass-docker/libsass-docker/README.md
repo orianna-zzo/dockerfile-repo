@@ -41,7 +41,7 @@ Check the image, and this image is only 8.76MB now:
 $ docker images
 ```
 
-Ref: The dockerfile refers to [this docker image jbergknoff/sass](https://hub.docker.com/r/jbergknoff/sass/)
+Ref: The dockerfile refers to this docker image [jbergknoff/sass](https://hub.docker.com/r/jbergknoff/sass/)
 
 ## Run the Container
 Run the docker container:
@@ -86,7 +86,10 @@ $ docker run --name my-libsass -v $(pwd):/sass -v $(pwd)/css:/output --rm -it --
 
 ## Version
 ### v3.5.2:
-sassc: 3.4.8-6-g43c4  libsass: 3.5.2-75-gedd2  sass2scss: 1.1.1  sass: 3.5
+- sassc: 3.4.8-6-g43c4  
+- libsass: 3.5.2-75-gedd2  
+- sass2scss: 1.1.1  
+- sass: 3.5
 
 
 
