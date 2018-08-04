@@ -39,7 +39,6 @@ Check the image, and this image is only 680MB now:
 $ docker images
 ```
 
-Ref: The dockerfile refers to [this docker image jbergknoff/sass](https://hub.docker.com/r/jbergknoff/sass/)
 
 ## Run the Container
 Run the docker container:
