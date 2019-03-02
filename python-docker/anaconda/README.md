@@ -15,7 +15,8 @@ $ docker pull orianna/anaconda
 ```
 
 ##### Supported tags
-* 3.6, latest (python 3.6, anaconda3-5.0.1)
+* 3.6 (python 3.6, anaconda3-5.0.1)
+* 3.6-5.2.0, latest (python 3.6, anaconda3-5.2.0)
 
 #### From Dockerfile
 
