@@ -11,7 +11,7 @@ You can get the image from the [Docker Hub](https://hub.docker.com/r/orianna/ten
 You can pull the image from the [Docker Hub](https://hub.docker.com/r/orianna/tensorflow/)
 
 ```shell
-$ docker pull orianna/anaconda
+$ docker pull orianna/tensorflow
 ```
 
 ##### Supported tags
@@ -21,7 +21,7 @@ $ docker pull orianna/anaconda
 #### From Dockerfile
 
 You can build it from the Dockerfile.
-Base image: orianna/anaconda
+Base image: orianna/tensorflow
 
 ```shell
 $ docker build -t your-image-name:your-tag .
