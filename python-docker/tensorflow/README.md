@@ -16,7 +16,7 @@ $ docker pull orianna/tensorflow
 
 ##### Supported tags
 * 1.5.0-py3.6 (tensorflow-1.5.0, python 3.6, anaconda3-5.0.1)
-* 1.13.1-py3.6, latest (tensorflow-1.13.1, python 3.6, anaconda3-5.2.0, add keras)
+* 1.13.1, latest (tensorflow-1.13.1, python 3.6, anaconda3-5.2.0, add keras)
 
 #### From Dockerfile
 

@@ -21,5 +21,6 @@ $ docker build -t your-image-name:your-tag .
 ```
 
 ### Supported tags
-* 0.1, 0.1-alpine3.7, latest (base image: alpine:3.7)
+* 0.1, 0.1-alpine3.7 (base image: alpine:3.7)
+* 3.9, latest (base image: alpine:3.9)
 
