@@ -1,26 +1,26 @@
 # dockerfile-repo
 
-## tensorflow-docker
+## pytorch-docker
 Docker image for tensorflow
 
 ### Get the image
-You can get the image from the [Docker Hub](https://hub.docker.com/r/orianna/tensorflow/) or you can build it with the Dockerfile
+You can get the image from the [Docker Hub](https://hub.docker.com/r/orianna/pytorch/) or you can build it with the Dockerfile
 
 #### From Docker Hub
 
-You can pull the image from the [Docker Hub](https://hub.docker.com/r/orianna/tensorflow/)
+You can pull the image from the [Docker Hub](https://hub.docker.com/r/orianna/pytorch/)
 
 ```shell
-$ docker pull orianna/anaconda
+$ docker pull orianna/pytorch
 ```
 
 ##### Supported tags
-* 1.5.0-py3.6, latest (tensorflow-1.5.0, python 3.6, anaconda3-5.0.1)
+* 1.0.1, latest (pytorch1.0.1, python 3.6, anaconda3-5.0.1, with tensorflow 1.13.0 for tensorboard and keras)
 
 #### From Dockerfile
 
 You can build it from the Dockerfile.
-Base image: orianna/anaconda
+Base image: orianna/pytorch
 
 ```shell
 $ docker build -t your-image-name:your-tag .
@@ -31,7 +31,7 @@ $ docker build -t your-image-name:your-tag .
 Working directory is `/work`. You can mount working directory to your code directory on your host. You can go to your code directory and use the following command to start the container:
 
 ```shell
-$ docker run -v $(pwd):/work  -p 8888:8888 -p 6006:6006 --rm -it orianna/tensorflow
+$ docker run -v $(pwd):/work  -p 8888:8888 -p 6006:6006 --rm -it orianna/pytorch
 ```
 
 After you start your container, you can use the following command to start the Jupyter Notebook:
